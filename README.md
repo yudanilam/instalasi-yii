@@ -99,18 +99,22 @@ Instalasi menggunakan via composer
     DocumentRoot "/path/to/nm_aplikasimu/frontend/web/
     
     <directory "/path/to/nm_aplikasimu/frontend/web/
+      
        #use mod_rewrite for pretty URL support
+      
        RewriteEngine on
+      
        #if a directory or a file exits, use the request directly
        RewriteCond %{REQUEST_FILENAME} !-f
        RewriteCond %{REQUEST_FILENAME} !-d
+      
        #Otherwise forward the request to index.php
        
        #use index.php as index file
        DirectoryIndex index.php
        
        #....other settings...
-       </Directory>
+    </Directory>
   </VirtualHost *:80>
   
  <VirtualHost *:80>
@@ -129,7 +133,7 @@ Instalasi menggunakan via composer
        DirectoryIndex index.php
        
        #....other settings...
-       </Directory>
+    </Directory>
   </VirtualHost *:80>
   
  kemudian rubah hosts file ke domain server kamu:
