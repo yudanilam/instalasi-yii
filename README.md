@@ -95,8 +95,8 @@ Instalasi menggunakan via composer
  dengan cara apache:
  
  <VirtualHost *:80>
-    ServerName frontend.dev
-    DocumentRoot "/path/to/nm_aplikasimu/frontend/web/
+       ServerName frontend.dev
+       DocumentRoot "/path/to/nm_aplikasimu/frontend/web/
     
     <directory "/path/to/nm_aplikasimu/frontend/web/
       
@@ -117,9 +117,12 @@ Instalasi menggunakan via composer
     </Directory>
   </VirtualHost *:80>
   
+ 
+ 
+ 
  <VirtualHost *:80>
-    ServerName backend.dev
-    DocumentRoot "/path/to/nm_aplikasimu/backend/web/
+      ServerName backend.dev
+      DocumentRoot "/path/to/nm_aplikasimu/backend/web/
     
     <directory "/path/to/nm_aplikasimu/backend/web/
        #use mod_rewrite for pretty URL support
